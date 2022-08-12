@@ -5,4 +5,5 @@ pgrep -x conky > /dev/null || conky &
 pgrep -x trayer > /dev/null || trayer --edge top --align right --widthtype percent --width 10 --heighttype pixtl --height 21 --transparent true --tint 0x282A2E --alpha 0 &
 pgrep -x volumeicon > /dev/null || volumeicon &
 pgrep -x nitrogen > /dev/null || nitrogen --restore &
+pgrep -x udiskie > /dev/null || udiskie -s &
 

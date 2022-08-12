@@ -9,3 +9,5 @@ volumeicon
 conky
 vim
 xsel (for vim clipboard)
+udisks2
+udiskie (automount usb devices)
