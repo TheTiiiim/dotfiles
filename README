@@ -6,6 +6,7 @@ picom
 nitrogen
 trayer
 volumeicon
+nm-applet
 conky
 vim
 xsel (for vim clipboard)
