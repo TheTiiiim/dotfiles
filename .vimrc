@@ -1,5 +1,4 @@
 set background=dark
-colorscheme gruvbox-material
 
 filetype plugin on
 syntax on
@@ -14,3 +13,4 @@ endif
 
 set clipboard=unnamedplus,unnamed
 autocmd Vimleave * call system("echo -n $'" . escape(getreg(), "'") . "' | xsel --input --clipboard")
+
