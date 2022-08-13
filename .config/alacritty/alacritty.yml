@@ -42,5 +42,5 @@ colors:
     white:   '0xf9f8f5'
 
 window:
-  opacity: 0.9
+  opacity: 0.95
 
