@@ -2,9 +2,10 @@
 
 pgrep -x picom > /dev/null || picom &
 pgrep -x nitrogen > /dev/null || nitrogen --restore &
+pgrep -x pulseaudio > /dev/null || pulseaudio &
 pgrep -x conky > /dev/null || conky &
 pgrep -x trayer > /dev/null || trayer --edge top --align right --widthtype pixel --width 137 --heighttype pixel --height 21 --transparent true --tint 0x49A7C6 --alpha 0 --SetPartialStrut true &
-pgrep -x volumeicon > /dev/null || volumeicon &
 pgrep -x nm-applet > /dev/null || nm-applet &
 pgrep -x udiskie > /dev/null || udiskie -s &
+pgrep -x dunst > /dev/null || dunst &
 
