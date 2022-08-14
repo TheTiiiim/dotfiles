@@ -2,8 +2,8 @@ Config {
 
    -- appearance
      font =         "xft:Bitstream Vera Sans Mono:size=9:bold:antialias=true"
-   , bgColor =      "#431751"
-   , fgColor =      "#FFFFFF"
+   , bgColor =      "#49A7C6"
+   , fgColor =      "#000000"
    , position =     TopW L 90
    , border =       NoBorder
    , borderColor =  "#D5FF57"
@@ -43,8 +43,8 @@ Config {
                              , "--Low"      , "1000"       -- units: B/s
                              , "--High"     , "5000"       -- units: B/s
                              , "--low"      , "#D5FF57"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
+                             , "--normal"   , "darkred"
+                             , "--high"     , "#4C0B39"
                              ] 10
 
         -- cpu activity monitor
@@ -52,8 +52,8 @@ Config {
                              , "--Low"      , "50"         -- units: %
                              , "--High"     , "85"         -- units: %
                              , "--low"      , "#D5FF57"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
+                             , "--normal"   , "darkred"
+                             , "--high"     , "#4C0B39"
                              ] 10
 
         -- cpu core temperature monitor
@@ -61,8 +61,8 @@ Config {
                              , "--Low"      , "70"        -- units: °C
                              , "--High"     , "80"        -- units: °C
                              , "--low"      , "#D5FF57"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
+                             , "--normal"   , "darkred"
+                             , "--high"     , "#4C0B39"
                              ] 50
                           
         -- memory usage monitor
@@ -70,16 +70,16 @@ Config {
                              , "--Low"      , "20"        -- units: %
                              , "--High"     , "90"        -- units: %
                              , "--low"      , "#D5FF57"
-                             , "--normal"   , "darkorange"
-                             , "--high"     , "darkred"
+                             , "--normal"   , "darkred"
+                             , "--high"     , "#4C0B39"
                              ] 10
 
         -- battery monitor
         , Run Battery        [ "--template" , "Batt: <acstatus>"
                              , "--Low"      , "10"        -- units: %
                              , "--High"     , "80"        -- units: %
-                             , "--low"      , "darkred"
-                             , "--normal"   , "darkorange"
+                             , "--low"      , "#4C0B39"
+                             , "--normal"   , "darkred"
                              , "--high"     , "#D5FF57"
 
                              , "--" -- battery specific options
