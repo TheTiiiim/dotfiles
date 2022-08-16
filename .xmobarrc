@@ -96,8 +96,7 @@ Config {
         , Run Date           "%F (%a) %I:%M:%S %p" "date" 10
 
         -- keyboard layout indicator
-        , Run Kbd            [ ("us(dvorak)" , "<fc=#00008B>DV</fc>")
-                             , ("us"         , "<fc=#8B0000>US</fc>")
+        , Run Kbd            [ ("us"         , "<fc=#8B0000>US</fc>")
                              ]
         ]
    }
