@@ -13,6 +13,7 @@ xsel (for vim clipboard)
 udisks2
 udiskie (automount usb devices)
 pulseaudio
+pa-applet
 dunst (notification manager)
 arc-gtk-theme
 
