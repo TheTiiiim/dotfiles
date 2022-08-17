@@ -2,8 +2,8 @@ Config {
 
    -- appearance
      font =         "xft:Bitstream Vera Sans Mono:size=10:bold:antialias=true"
-   , bgColor =      "#49A7C6"
-   , fgColor =      "#000000"
+   , bgColor =      "#272822"
+   , fgColor =      "#FFFFFF"
    , position =     Static { xpos = 0, ypos = 0, width = 1229, height = 21 }
    , border =       NoBorder
    , borderColor =  "#D5FF57"
@@ -11,7 +11,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %date% || %kbd% "
+   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %date%"
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -93,10 +93,7 @@ Config {
 
         -- time and date indicator 
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
-        , Run Date           "%F (%a) %I:%M:%S %p" "date" 10
+        , Run Date           "<fc=White,#4C0B39> %F (%a) %I:%M:%S %p </fc>" "date" 10
 
-        -- keyboard layout indicator
-        , Run Kbd            [ ("us"         , "<fc=#8B0000>US</fc>")
-                             ]
         ]
    }
