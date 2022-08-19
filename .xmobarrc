@@ -1,3 +1,5 @@
+
+
 Config { 
 
    -- appearance
@@ -11,7 +13,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%battery% | %multicpu% | %coretemp% | %memory% | %dynnetwork% }{ %date%"
+   , template = "%StdinReader% }{ %date%%battery%"
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -94,6 +96,6 @@ Config {
         -- time and date indicator 
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
         , Run Date           "<fc=White,#4C0B39> %F (%a) %I:%M:%S %p </fc>" "date" 10
-
+        , Run StdinReader
         ]
    }
