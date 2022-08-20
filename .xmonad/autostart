@@ -1,6 +1,6 @@
 #! /bin/sh
 
-pgrep -x picom > /dev/null || picom &
+pgrep -x picom > /dev/null || picom --experimental-backends &
 pgrep -x nitrogen > /dev/null || nitrogen --restore &
 pgrep -x pulseaudio > /dev/null || pulseaudio &
 pgrep -x conky > /dev/null || conky &
