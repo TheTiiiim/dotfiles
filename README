@@ -16,4 +16,8 @@ pulseaudio
 pa-applet
 dunst (notification manager)
 arc-gtk-theme
+scrot (screenshots)
 
+Additional Requirements
+
+the directory ~/Pictures/Screenshots must exist, else screenshots fail

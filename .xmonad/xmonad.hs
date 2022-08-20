@@ -3,9 +3,9 @@ import XMonad.Layout.Gaps
 import XMonad.Layout.Spacing
 import XMonad.Hooks.DynamicLog
 import XMonad.Layout.NoBorders
+import XMonad.Util.EZConfig (additionalKeys)
 
-main = xmonad =<< statusBar myBar myPP toggleStrutsKey myConfig
-
+main = xmonad =<< statusBar myBar myPP toggleStrutsKey myConfig 
 myConfig =  def
     { terminal           = "alacritty"
     , modMask            = mod4Mask
@@ -15,7 +15,8 @@ myConfig =  def
     , focusedBorderColor = "#49A7C6"
     , layoutHook         = smartSpacingWithEdge 5 $ smartBorders $ Tall 1 (3/100) (1/2)
     , logHook            = dynamicLogWithPP myPP
-    }
+    } `additionalKeys` myKeys
+
 
 myBar = "xmobar"
 
@@ -27,4 +28,8 @@ myPP = def
     , ppTitle   = xmobarColor "white"  "" . shorten 70
     , ppLayout  = (\x -> "")
     }
+
+myKeys =
+    [ ((0, xK_Print), spawn "scrot ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png")
+    ]
 
