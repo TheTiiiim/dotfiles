@@ -4,6 +4,7 @@ import XMonad.Layout.Spacing
 import XMonad.Hooks.DynamicLog
 import XMonad.Layout.NoBorders
 import XMonad.Util.EZConfig (additionalKeys)
+import Graphics.X11.ExtraTypes.XF86
 
 main = xmonad =<< statusBar myBar myPP toggleStrutsKey myConfig 
 myConfig =  def
@@ -31,5 +32,7 @@ myPP = def
 
 myKeys =
     [ ((0, xK_Print), spawn "scrot ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png")
+    , ((0, xF86XK_MonBrightnessUp), spawn "~/.scripts/changebrightness up")
+    , ((0, xF86XK_MonBrightnessDown), spawn "~/.scripts/changebrightness down")
     ]
 
