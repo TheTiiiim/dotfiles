@@ -11,7 +11,7 @@ Config {
    -- layout
    , sepChar =  "%"   -- delineator between plugin names and straight text
    , alignSep = "}{"  -- separator between left-right alignment
-   , template = "%StdinReader% }{ %date%%battery%"
+   , template = "%StdinReader% }{ %battery%%date%"
 
    -- general behavior
    , lowerOnStart =     True    -- send to bottom of window stack on start
@@ -47,9 +47,9 @@ Config {
                              , "-f"         , ""
                              , "-W"         , "0"
                              , "--"
-                                       , "-o"	, "<leftbar> <left>% (<timeleft>)"
-                                       , "-O"	, "<leftbar> Charging"
-                                       , "-i"	, "<leftbar> Charged"
+                             , "-o"         , "<leftbar> <left>% (<timeleft>)"
+                             , "-O"         , "<leftbar> Charging"
+                             , "-i"         , "<leftbar> Charged"
                              ] 50
 
         -- time and date indicator 
