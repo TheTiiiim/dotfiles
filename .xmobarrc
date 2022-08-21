@@ -4,7 +4,7 @@ Config {
      font =         "xft:Hack Nerd Font Mono:size=11:bold:antialias=true"
    , bgColor =      "#272822"
    , fgColor =      "#FFFFFF"
-   , position =     Static { xpos = 0, ypos = 0, width = 1229, height = 21 }
+   , position =     Static { xpos = 0, ypos = 0, width = 1229, height = 20 }
    , border =       NoBorder
    , borderColor =  "#D5FF57"
 
