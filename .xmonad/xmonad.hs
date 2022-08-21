@@ -34,5 +34,9 @@ myKeys =
     [ ((0, xK_Print), spawn "scrot ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png")
     , ((0, xF86XK_MonBrightnessUp), spawn "~/.scripts/changebrightness up")
     , ((0, xF86XK_MonBrightnessDown), spawn "~/.scripts/changebrightness down")
+    , ((0, xF86XK_AudioRaiseVolume), spawn "~/.scripts/changevolume up")
+    , ((0, xF86XK_AudioLowerVolume), spawn "~/.scripts/changevolume down")
+    , ((0, xF86XK_AudioMute), spawn "~/.scripts/changevolume mute")
+    , ((0, xF86XK_AudioMicMute), spawn "pamixer --source 2 -t")
     ]
 
