@@ -16,6 +16,7 @@ pulseaudio
 pa-applet
 dunst (notification manager)
 arc-gtk-theme
+arc-icon-theme
 scrot (screenshots)
 
 Additional Requirements
